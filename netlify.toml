@@ -1,5 +1,5 @@
 [build]
-  command = "npx prisma migrate deploy && npm run seed && npm run build"
+  command = "npx prisma db push && npm run seed && npm run build"
   publish = ".next"
 
 [build.environment]
